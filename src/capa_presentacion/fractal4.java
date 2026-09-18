@@ -30,7 +30,7 @@ public class fractal4 extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
+        jPanel1 = new PanelFractal();
         jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
@@ -134,12 +134,14 @@ pantalla_principal v1 = new pantalla_principal();
         //Dar la instruccion que la pantalla se abra en el centro 
         v1.setLocationRelativeTo(null);
         //Para cerrar la ventana
-        this.setVisible(false);      }//GEN-LAST:event_jButton1ActionPerformed
+        this.dispose();      }//GEN-LAST:event_jButton1ActionPerformed
 
     private void DibujarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DibujarActionPerformed
     // Aquí implementaremos la lógica para dibujar el nuevo fractal
-    int n = Integer.parseInt(jTextField1.getText());
-    this.objGrafico.graficarCurvaDragon(n);
+    Integer n = Entrada.leerNivel(this, jTextField1, Capa_Logica.geometria.Fractal.LEVY_C);
+        if (n != null) {
+            this.objGrafico.graficarCurvaLevyC(n);
+        }
     }//GEN-LAST:event_DibujarActionPerformed
 
     /**
@@ -186,7 +188,7 @@ pantalla_principal v1 = new pantalla_principal();
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
+    private PanelFractal jPanel1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

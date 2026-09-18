@@ -30,7 +30,7 @@ public class fractal3 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        jPanel1 = new PanelFractal();
         btn1111 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
@@ -139,7 +139,7 @@ public class fractal3 extends javax.swing.JFrame {
         //Dar la instruccion que la pantalla se abra en el centro 
         v1.setLocationRelativeTo(null);
         //Para cerrar la ventana
-        this.setVisible(false);    }//GEN-LAST:event_btn1111ActionPerformed
+        this.dispose();    }//GEN-LAST:event_btn1111ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
@@ -147,8 +147,10 @@ public class fractal3 extends javax.swing.JFrame {
 
     private void DibujarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DibujarActionPerformed
 // Aquí implementaremos la lógica para dibujar el nuevo fractal
-    int n = Integer.parseInt(jTextField1.getText());
-    this.objGrafico.graficarFractalSierpinski(n);
+    Integer n = Entrada.leerNivel(this, jTextField1, Capa_Logica.geometria.Fractal.SIERPINSKI);
+        if (n != null) {
+            this.objGrafico.graficarFractalSierpinski(n);
+        }
         }//GEN-LAST:event_DibujarActionPerformed
 
     /**
@@ -194,7 +196,7 @@ public class fractal3 extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
+    private PanelFractal jPanel1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

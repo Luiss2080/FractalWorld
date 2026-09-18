@@ -76,7 +76,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="jPanel1">
+    <Container class="capa_presentacion.PanelFractal" name="jPanel1">
 
       <Layout>
         <DimensionLayout dim="0">

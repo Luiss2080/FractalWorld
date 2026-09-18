@@ -27,7 +27,7 @@ public class fractal1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        jPanel1 = new PanelFractal();
         btn11 = new javax.swing.JButton();
         Dibujar = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -145,7 +145,7 @@ public class fractal1 extends javax.swing.JFrame {
         //Dar la instruccion que la pantalla se abra en el centro 
         v1.setLocationRelativeTo(null);
         //Para cerrar la ventana
-        this.setVisible(false);
+        this.dispose();
        
             }//GEN-LAST:event_btn11ActionPerformed
 
@@ -154,8 +154,10 @@ public class fractal1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void DibujarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DibujarActionPerformed
-    int n = Integer.parseInt(jTextField1.getText());
-    this.objGrafico.graficarCopoNieve(n);
+    Integer n = Entrada.leerNivel(this, jTextField1, Capa_Logica.geometria.Fractal.COPO_DE_NIEVE);
+        if (n != null) {
+            this.objGrafico.graficarCopoNieve(n);
+        }
         }//GEN-LAST:event_DibujarActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -211,7 +213,7 @@ public class fractal1 extends javax.swing.JFrame {
     private javax.swing.JLabel Valor;
     private javax.swing.JButton btn11;
     private javax.swing.JButton jButton2;
-    private javax.swing.JPanel jPanel1;
+    private PanelFractal jPanel1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

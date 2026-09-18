@@ -74,13 +74,13 @@ public class pantalla_principal extends javax.swing.JFrame {
         jLabel3.setText("3. Fractal de Sierpinski (Triángulo) ");
 
         jLabel4.setFont(new java.awt.Font("Elephant", 0, 14)); // NOI18N
-        jLabel4.setText("2. Fractal del Árbol de Pitágoras ");
+        jLabel4.setText("2. Fractal del Árbol Binario ");
 
         jLabel5.setFont(new java.awt.Font("Elephant", 0, 14)); // NOI18N
         jLabel5.setText("4. Fractal de Curva Lévy C");
 
         jLabel6.setFont(new java.awt.Font("Elephant", 0, 14)); // NOI18N
-        jLabel6.setText("5. Fractak de Curva de Hilbert");
+        jLabel6.setText("5. Fractal de Curva de Hilbert");
 
         txt4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -413,7 +413,7 @@ public class pantalla_principal extends javax.swing.JFrame {
         //Dar la instruccion que la pantalla se abra en el centro 
         v5.setLocationRelativeTo(null);
         //Para cerrar la ventana
-        this.setVisible(false);    }//GEN-LAST:event_btn4ActionPerformed
+        this.dispose();    }//GEN-LAST:event_btn4ActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
         fractal1 v2 = new fractal1();
@@ -422,7 +422,7 @@ public class pantalla_principal extends javax.swing.JFrame {
         //Dar la instruccion que la pantalla se abra en el centro 
         v2.setLocationRelativeTo(null);
         //Para cerrar la ventana
-        this.setVisible(false);
+        this.dispose();
         
 
     }//GEN-LAST:event_btn1ActionPerformed
@@ -434,7 +434,7 @@ public class pantalla_principal extends javax.swing.JFrame {
         //Dar la instruccion que la pantalla se abra en el centro 
         v3.setLocationRelativeTo(null);
         //Para cerrar la ventana
-        this.setVisible(false);    }//GEN-LAST:event_btn2ActionPerformed
+        this.dispose();    }//GEN-LAST:event_btn2ActionPerformed
 
     private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
         fractal3 v4 = new fractal3();
@@ -443,7 +443,7 @@ public class pantalla_principal extends javax.swing.JFrame {
         //Dar la instruccion que la pantalla se abra en el centro 
         v4.setLocationRelativeTo(null);
         //Para cerrar la ventana
-        this.setVisible(false);     }//GEN-LAST:event_btn3ActionPerformed
+        this.dispose();     }//GEN-LAST:event_btn3ActionPerformed
 
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
         fractal5 v6 = new fractal5();
@@ -452,7 +452,7 @@ public class pantalla_principal extends javax.swing.JFrame {
         //Dar la instruccion que la pantalla se abra en el centro 
         v6.setLocationRelativeTo(null);
         //Para cerrar la ventana
-        this.setVisible(false);      }//GEN-LAST:event_btn5ActionPerformed
+        this.dispose();      }//GEN-LAST:event_btn5ActionPerformed
 
     private void btn11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn11ActionPerformed
         fractal6 v7 = new fractal6();
@@ -461,7 +461,7 @@ public class pantalla_principal extends javax.swing.JFrame {
         //Dar la instruccion que la pantalla se abra en el centro 
         v7.setLocationRelativeTo(null);
         //Para cerrar la ventana
-        this.setVisible(false);
+        this.dispose();
 
     }//GEN-LAST:event_btn11ActionPerformed
 
@@ -472,7 +472,7 @@ public class pantalla_principal extends javax.swing.JFrame {
         //Dar la instruccion que la pantalla se abra en el centro 
         v8.setLocationRelativeTo(null);
         //Para cerrar la ventana
-        this.setVisible(false);
+        this.dispose();
 
     }//GEN-LAST:event_btn13ActionPerformed
 
