@@ -1,4 +1,4 @@
-# <<NOMBRE>>
+# FractalWorld
 
 Aplicación de escritorio en **Java Swing** que dibuja siete fractales recursivos.
 El usuario elige un fractal en el menú principal, escribe el nivel de recursión
