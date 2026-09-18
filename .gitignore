@@ -1,0 +1,22 @@
+# Salidas de compilación
+build/
+dist/
+target/
+*.class
+
+# NetBeans: estado por usuario/equipo
+nbproject/private/
+
+# Otros IDE
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# Sistema operativo y logs
+Thumbs.db
+.DS_Store
+*.log
+hs_err_pid*
